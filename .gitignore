@@ -1,0 +1,15 @@
+# build output and the local header sysroot (re-created by build.sh / sys/setup.sh)
+build/
+build-sanitize/
+sys/root/
+sys/lib/
+sys/pkgconfig/
+sys/.setup-done
+spikes/cpp/build/
+spikes/rust/target/
+spikes/bench/build/
+
+# your firmware image: never commit it
+firmware/
+*.op1
+*.orig

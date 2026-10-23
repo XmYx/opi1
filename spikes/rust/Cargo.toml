@@ -1,0 +1,18 @@
+[package]
+name = "spike-rust"
+version = "0.1.0"
+edition = "2021"
+publish = false
+description = "op1-og-native language spike, Rust side (see ../README.md)"
+
+[[bin]]
+name = "spike-rust"
+path = "src/main.rs"
+
+[dependencies]
+alsa = "0.9"
+libc = "0.2"
+sdl3-sys = { version = "0.7", default-features = false, features = ["use-pkg-config"] }
+
+# Cargo's default release profile (opt-level 3, no LTO), the same as `g++ -O3` without LTO on the C++ side.
+[profile.release]
